@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var angka_1 = parseInt(prompt('angka pertama?'));
+        var angka_2 = parseInt(prompt('angka kedua?'));
+        var operasi = prompt('pilih operasi matematika - tambah : kurang : bagi : kali : pangkat : min : max');
+
+        if (operasi == 'Tambah'){
+            alert(angka_1 + angka_2);
+        } else if (operasi.toLowerCase() == 'kurang') {
+            alert(angka_1 - angka_2);
+        } else if (operasi.toLowerCase() == 'kali') {
+            alert(angka_1 * angka_2);
+        } else if (operasi.toLowerCase() == 'bagi') {
+            alert(angka_1 / angka_2);
+        } else if (operasi.toLowerCase() == 'pangkat') {
+            alert(Math.pow(angka_1, angka_2));
+        } else if (operasi.toLowerCase() == 'min') {
+            alert(Math.min(angka_1, angka_2));
+        } else if (operasi.toLowerCase() == 'max') {
+            alert(Math.max(angka_1, angka_2));
+        } else {
+            alert('Maaf operasi matematika tidak ada');
+        }
+
+    </script>
+</body>
+</html>
